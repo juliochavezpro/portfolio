@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+a {
+    font-size: .75rem;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: .75rem;
+}
+
+button:hover {
+    background-color: #69A4FF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* background-color: #333; */
+    background: linear-gradient(to right, #000000, #120724);
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.nav-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #444;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: wrap-around;
+    padding: 25px 25px;
+    margin: auto;
+    background: linear-gradient(to right, #000000, #120724);
+    color: white;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero > img {
+    margin: auto;
+    width: 30%;
+    border-radius: 50%;
+    height: auto;
+}
+
+.about {
+    width: 80%;
+    margin: auto;
+}
+
+.about > h2 {
+    text-align: center;
+}
+
+.about > p {
+    text-align: center;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid silver;
+    border-width: 1px;
+    border-radius: 2%;
+    box-shadow: 1px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 5px;
+    margin: 5px;
+    width: 30%;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px grey;
+}
+
+.card > img {
+    width: 50%;
+}
+
+.card > p {
+    text-align: center;
+}
+
+.card > h3 {
+    text-align: center;
+}
+
+.contact {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.contact > p {
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+    
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero > img {
+        width: 70%;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

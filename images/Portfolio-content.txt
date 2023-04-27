@@ -1,0 +1,11 @@
+This landing page - a personal portfolio page that I designed and built using HTML and CSS.
+
+GA Cobbler - A website for a food brand website that I designed and integrated. I updated the website over time to include product pages and a store locator.
+
+Laundry Dash - A website for a laundry service that I designed and integrated.
+
+Pro Service Staffing - A website for a staffing company that I designed and integrated.
+
+Westbrooke Dixie Community Center - a website for a community center that I designed and integrated.
+
+Prime Properties Services, LLC - a website for a real estate company that I design and integration.
